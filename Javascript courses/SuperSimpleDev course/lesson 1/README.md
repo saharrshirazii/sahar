@@ -1,7 +1,3 @@
-<picture>
- <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/25423296/163456776-7f95b81a-f1ed-45f7-b7ab-8fa810d529fa.png">
-  <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png">
-  <img alt="Shows an illustrated sun in light mode and a moon with stars in dark mode." src="Javascript courses/SuperSimpleDev course/lesson 1/exercise1-1.png">
-  <img alt="Shows an illustrated sun in light mode and a moon with stars in dark mode." src="Javascript courses/SuperSimpleDev course/lesson 1/exercise1-2.png">
-</picture>
-
+# Exercises
+![Exercises 1](https://user-images.githubusercontent.com/70604577/229872995-4f102a89-1b86-49a9-8f6b-62f1ba8badb5.png)
+![Exercises 1 2](https://user-images.githubusercontent.com/70604577/229872993-3e04a4cb-c67c-4d0b-83fd-40904f047bf4.png)
