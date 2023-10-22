@@ -4,15 +4,6 @@ import App from "./App.js"
 
 
 
-function Page(){
-    return(
-        <div>
-            <App/>
-        </div>
-    )
-}
 
-
-
-ReactDOM.render(<Page/> , document.getElementById("root"))
+ReactDOM.render(<App/> , document.getElementById("root"))
 
