@@ -1,7 +1,4 @@
 import React from "react";
-import Navbar from "./Navbar.js"
-import MainContent from "./MainContent"
-import Card from "./Card.js"
 import Contact from "./Contact.js"
 
 
