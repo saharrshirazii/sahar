@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+.gray{
+    color: #918E9B;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+
+nav {
+    height: 110px;
+    display: flex;
+    background-color: #F55A5A;
+}
+
+.nav--logo{
+    height: 110px;
+    margin:auto;
+}
+
+
+section {
+    padding: 20px;
+}
+
+
+
+.cards-list {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 20px;
+    overflow-x: auto;
+    max-width: 650px;
+    margin: auto;
+}
+
+.card {
+    width: 600px;
+    height: 168px;
+    padding-right: 40px;
+    padding-left: 40px;
+    font-size: 12px;
+    flex: 0 0 auto;         
+    display: flex;          
+    position: relative;
+}
+
+.card--image {
+    width: 125px;
+    height: 168px;
+    border-radius: 9px;
+}
+
+.card--stats {
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.card--map {
+    height: 9.55pxpx;
+}
+
+.card--location{
+    font-family: 'inter';
+    font-weight: 400;
+    font-size: 10.24px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 20px;
+    
+}
+
+.card--googleMap > a:link{
+    color: #918E9B;
+    font-family: 'inter';
+    font-weight: 400;
+    font-size: 10.24px;
+
+}
+.card--googleMap > a:hover{
+    color: black;
+    font-family: 'inter';
+    font-weight: 400;
+    font-size: 10.24px;
+
+}
+
+.card--tittle{
+    color: black;
+    font-family: 'inter';
+    font-weight: 700;
+    font-size: 25px;
+    margin: 10px 0 10px 0;
+}
+.card--date{
+    color: #2B283A;
+    font-family: 'inter';
+    font-weight: 700;
+    font-size: 10.24px;
+}
+
+.card--description {
+    color: #2B283A;
+    font-family: 'inter';
+    font-weight: 400;
+    font-size: 10.24px;
+}
+
+.info-group {
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+}
+
+.info-group > img {
+    height: 11px;
+    margin-right: 8px;
+}
+
+.info-group > p {
+    margin-block: 3px;
+    font-size: 12px;
+    color: #2B283A;
+}
