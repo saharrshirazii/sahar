@@ -1,3 +1,3 @@
 
 # Exercises
-![Exercises 1](https://github.com/saharrshirazii/sahar/blob/main/React/soldout-badge-project/wedding-photography.png)
+![Exercises 1](https://github.com/saharrshirazii/sahar/blob/main/React/travel-journal-project/travel.journal.project.png)
