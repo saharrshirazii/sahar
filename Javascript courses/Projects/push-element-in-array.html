@@ -2,35 +2,46 @@
 <html>
 <head>
     <title>HTML page</title>
-<script>
+    <script>
         let names = ['Jack', 'Mike', 'Nick', 'Robert'];
-        function pushElement (element){
-         for (let i = length.names; i>0; i--){
-            names[i] = names [i-1];
-         }
-         names[0] = element;
-         displayArray();
+
+        function pushElement(element) {
+            for (let i = names.length; i > 0; i--) {
+                names[i] = names[i - 1];
+            }
+            names[0] = element;
+            displayArray();
         }
 
+        function pullElement() {
+            
+            let lastItem = names[names.length - 1];
+            console.log("آخرین عنصر:", lastItem);
+
+            let newLength = names.length - 1;
+            let temp = [];
+            for (let i = 0; i < newLength; i++) {
+                temp[i] = names[i];
+            }
+            names = temp; 
+            // آرایه کوتاه شده
+
+            displayArray();
+        }
 
         function displayArray() {
             document.getElementById('arrayDisplay').textContent = names.join(', ');
         }
-        // نمایش اولیه بعد از بارگذاری صفحه
+
+        // نمایش اولیه
         window.onload = displayArray;
-
-</script>
-
-   
+    </script>
 </head>
-
 <body>
     <h1>My Array:</h1>
     <div id="arrayDisplay"></div>
-    <button onclick="pushElement('Akbar')">Click me</button>
 
-
-     
+    <button onclick="pushElement('Akbar')">Push 'Akbar' to the first of array</button>
+    <button onclick="pullElement()">Pull ,Robert' from array</button>
 </body>
-
 </html>
