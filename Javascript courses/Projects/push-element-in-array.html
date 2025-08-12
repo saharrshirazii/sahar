@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML page</title>
+<script>
+        let names = ['Jack', 'Mike', 'Nick', 'Robert'];
+        function pushElement (element){
+         for (let i = length.names; i>0; i--){
+            names[i] = names [i-1];
+         }
+         names[0] = element;
+         displayArray();
+        }
+
+
+        function displayArray() {
+            document.getElementById('arrayDisplay').textContent = names.join(', ');
+        }
+        // نمایش اولیه بعد از بارگذاری صفحه
+        window.onload = displayArray;
+
+</script>
+
+   
+</head>
+
+<body>
+    <h1>My Array:</h1>
+    <div id="arrayDisplay"></div>
+    <button onclick="pushElement('Akbar')">Click me</button>
+
+
+     
+</body>
+
+</html>
