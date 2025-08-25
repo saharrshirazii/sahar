@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML page</title>
+    
+    <style>
+        .form{
+            background-color: rgb(248, 248, 248);
+            text-align: center;
+
+        }
+
+        .button:hover{
+            background-color: rgb(66, 66, 66);
+
+        }
+        
+    </style>
+    <script>
+        let showAlert = function(){
+            alert('you clicked on me.');
+        }
+
+        let onMouseAlert = function(){
+            alert('your mouse is over button');
+        }
+
+        let onMouseOutAlert = function(){
+            alert('your mose is out of button')
+        }
+
+    </script>
+</head>
+<body>
+   <form class="form" style="width: 400px; margin: auto; padding: 20px; border: 1px solid rgb(122, 121, 121); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> 
+   <h1>login form</h1>
+    <p>enter your username and password.</p>
+    <label for="username">Username</label>
+
+    <input type="username" placeholder="enter your username"/>
+    <br/>
+    <br/>
+    <div>
+     <label for="password">password</label>
+    <input type="password" placeholder="enter your password"/>
+    </div>
+    <br/>
+    <div style="margin-top:10px;">
+        <input type="checkbox" id="terms" name="terms">
+        <label for="terms">I agree to the <a href="#" target="_blank">Terms of Service</a></label>
+        
+    </div>
+    <button 
+    style="margin-top:20px;"
+    onclick="showAlert()" 
+    onmouseover="onMouseAlert()"
+    onmouseout="onMouseOutAlert()"
+    >Click me!</button>
+    <br/>
+</form> 
+
+
+    
+</html>
