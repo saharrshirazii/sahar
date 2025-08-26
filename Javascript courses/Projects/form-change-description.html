@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML page</title>
+    
+    <style>
+        
+        .formstyle{
+            background-color: rgb(248, 248, 248);
+            text-align: center;
+            width: 400px;
+            margin: auto; 
+            padding: 20px; 
+            border: 1px solid rgb(122, 121, 121); 
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .button:hover{
+            background-color: rgb(66, 66, 66);
+ 
+        }
+         .p {
+            transition-duration: 1000ms;
+         }
+        
+    </style>
+    <script>
+        
+
+       let onSubmited = function(event){
+            event.preventDefault();
+            let username = document.getElementsByName("username")[0].value;
+            let password = document.getElementsByName("Password")[0].value;
+            document.getElementById("description").innerHTML = "your form submited. thank you!";
+            document.getElementById("description").style.color = "green";
+                        document.getElementById("description").style.fontSize = "20px";
+
+
+             console.log('username:', username);
+            console.log('password:', password);
+
+
+              }
+
+
+    </script>
+</head>
+<body>
+   <form onsubmit = "onSubmited(event)" class = "formstyle"> 
+     <h1>login form</h1>
+     <p id="description">enter your username and password.</p>
+    
+     <label for="username">username</label>
+     <input name= "username"  placeholder="enter your username"/>
+     <br/>
+     <br/>
+    
+     <label for="password">password</label>
+     <input name = "Password" type="password" placeholder="enter your password"/>
+    
+     <br/>
+     <div style="margin-top:10px;">
+        <input type="checkbox" id="terms" name="terms">
+        <label for="terms">I agree to the <a href="#" target="_blank">Terms of Service</a></label>
+     </div>
+     <button style="margin-top:20px;" >Click me!</button>
+     <br/>
+</form> 
+
+
+    
+</html>
